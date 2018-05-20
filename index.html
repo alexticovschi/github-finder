@@ -13,25 +13,40 @@
       position: relative;
       margin: 0;
     }
-    nav, footer {
+
+    .git-background {
       background-color: #24292e;
+      color: #fff;
     }
+
+    .searchContainer {
+      margin-bottom: 50px;
+      overflow: hidden;
+    }
+
+    .btn:hover {
+      color: #fff;
+      background-color: #42474f;
+    }
+    .badge {
+      background-color: #415472;
+    }
+
     footer {
       position: absolute;
-      bottom: 0;
       width: 100%;
-      text-align: center;
-      color: #fff;
+      bottom: 0;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark mb-3">
+  <nav class="navbar navbar-dark git-background mb-3">
     <div class="container">
       <a href="#" class="navbar-brand">GitHub Finder</a>
     </div>
   </nav>
-  <div class="container searchContainer">
+  <div class="container searchContainer mb-5">
     <div class="search card card-body mt-5">
       <h1>Search GitHub Users</h1>
       <p class="lead">Enter a username to fetch a user profile and repos</p>
@@ -41,7 +56,7 @@
     <div id="profile"></div>
   </div>
 
-  <footer class="mt-5 mb-0 p-3 text-center ">
+  <footer class="mt-5 mb-0 p-3 text-center git-background">
     GitHub Finder &copy;
   </footer>
   
